@@ -1,0 +1,12 @@
+App(
+    appid="radio_broadcaster",
+    name="Radio Broadcaster",
+    apptype=FlipperAppType.PLUGIN,
+    entry_point="radio_broadcast_app",
+    cdefines=["APP_RADIO_BROADCASTER"],
+    requires=[
+        "gui",
+    ],
+    stack_size=2 * 1024,
+    order=20,
+)
